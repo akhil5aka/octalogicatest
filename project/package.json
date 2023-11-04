@@ -1,0 +1,27 @@
+{
+  "name": "octalogicatest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./cluster"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1292.0",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "country_state_district": "^1.0.6",
+    "debug": "^4.3.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fast-csv": "^4.3.6",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "morgan": "^1.3.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "node-datetime": "^2.1.2",
+    "nodemailer": "^6.9.0",
+    "nodemon": "^3.0.1"
+  }
+}
