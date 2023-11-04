@@ -14,7 +14,11 @@ module.exports={
             var model_id = req.body.model_id
             var start_date = req.body.start_date
             var end_date = req.body.end_date
+          
+            var booking_check = await model.booking_check(start_date,model_id) //function to cross check the booking
+            if(booking_check==0)
 
+            {
             var data_array={
                 "first_name":first_name,
                 "last_name":last_name,
@@ -40,6 +44,15 @@ module.exports={
                     "msg":"failed"
                 })
             }
+
+        }
+
+        else
+        {
+            res.status(400).json({
+                "msg":"car already booked"
+            })
+        }
 
         }
         catch(err)
